@@ -12,10 +12,12 @@ useEffect(()=>{
     <>
     <div className=' absolute text-white bg-purple-500   flex justify-center w-full flex-col '>
    <NavLink to="/Details"> <h2  className=' justify-start px-4 py-4 w-full flex text-xl text-white underline font-bold hover:text-gray-300  '>{'<-'}See Students Data</h2></NavLink>
-   <div className='flex justify-center'><h1 className=' font-extrabold text-4xl mt-10 underline underline-offset-4 decoration-double	'>All Students Data </h1></div> 
+   <div className='flex justify-center'><h1 className=' font-extrabold text-4xl  underline underline-offset-4 decoration-double	'>All Students Data </h1></div> 
 
 </div>
-    <div className=' bg-purple-500 flex flex-col  justify-center items-center  text-white h-screen'>
+
+
+    <div className=' bg-purple-500 flex flex-col  justify-center items-center  text-white h-max'>
 
      
         <div className=' mt-20 '>
