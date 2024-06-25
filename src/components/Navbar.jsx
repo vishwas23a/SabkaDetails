@@ -10,10 +10,10 @@ function Navbar() {
       </div>
       <div>
         <ul className="flex gap-20 mr-10 ">
-         <NavLink to="/"> <li>Home</li></NavLink>
-         <NavLink to="Form"> <li>Form</li></NavLink>
-        <NavLink to="Details"><li>Card</li></NavLink>  
-        <NavLink to="AllData"> <li>All Students</li></NavLink> 
+         <NavLink to="/" > <li className="transition ease-in-out delay-50 hover:-translate-y-1 hover:text-black hover:scale-110">Home</li></NavLink>
+         <NavLink to="Form"> <li className="transition ease-in-out delay-50 hover:-translate-y-1 text-black hover:scale-110">Form</li></NavLink>
+        <NavLink to="Details"><li className="transition ease-in-out delay-50 hover:-translate-y-1 text-black hover:scale-110">Card</li></NavLink>  
+        <NavLink to="AllData"> <li className="transition ease-in-out delay-50 hover:-translate-y-1 text-black hover:scale-110">All Students</li></NavLink> 
         </ul>
       </div>
     </div>
