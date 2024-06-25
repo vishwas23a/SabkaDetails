@@ -54,15 +54,8 @@ console.log("something went wrong",err);
   return (
     <div className='w-full flex justify-center bg-purple-600 h-screen '>
       <div className='absolute px-10 mt-2  flex  justify-between w-full'>
-    <NavLink to="/"> <button
-  className="bg-[#292929] border-2 border-[#3e3e3e] rounded-lg text-white px-6 py-1 text-base hover:border-[#fff] cursor-pointer transition"
->
-  Home
-</button></NavLink> 
-<NavLink to="/Details">
-<h2 className='text-lg font-bold underline text-white hover:text-gray-200 '>
-  See Students Data{'->'}
-</h2></NavLink>
+    
+
 
       </div>
       <ToastContainer/>

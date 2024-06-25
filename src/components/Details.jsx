@@ -17,14 +17,7 @@ const search=()=>{
 
   return (
     <div>
-<div className=' bg-purple-700 w-screen h-screen fixed '>
-
-<div className='absolute flex flex-col p-5 w-max gap-5   '>
-<NavLink to="/Form">    <h2 className='text-purple-700 text-lg w-48 text-center  hover:text-white p-2 rounded-lg font-bold border border-white hover:bg-purple-900  bg-white  '>Add more Students</h2></NavLink>
-  <NavLink to="/AllData"> <h2 className='text-purple-700 text-lg w-48 text-center  hover:text-white p-2 rounded-lg font-bold border border-white hover:bg-purple-900  bg-white  '>All Students data</h2></NavLink> 
-    
-  </div>
-
+<div className=' bg-purple-700 w-screen h-full overflow-auto fixed '>
 
 
 <div className='w-full justify-center flex  gap-5 flex-col  items-center h-full'>

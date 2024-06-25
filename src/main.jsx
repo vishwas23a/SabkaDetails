@@ -7,23 +7,32 @@ import Details from "./components/Details.jsx";
 import FirstPage from "./components/FirstPage.jsx";
 import Form from "./components/Form.jsx";
 import AllData from "./components/AllData.jsx";
+import Navbar from "./components/Navbar.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <FirstPage />,
+    element: <Navbar />,
+    children:[
+      {
+        path:"/",
+        element:<FirstPage/>
+      },
+
+      {
+        path: "Form",
+        element: <Form/>,
+      },
+      {
+        path: "Details",
+        element: <Details />,
+      },
+      {
+        path:'AllData',
+        element:<AllData/>
+      }
+    ]
   },
-  {
-    path: "/Form",
-    element: <Form/>,
-  },
-  {
-    path: "/Details",
-    element: <Details />,
-  },
-  {
-    path:'/AllData',
-    element:<AllData/>
-  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
