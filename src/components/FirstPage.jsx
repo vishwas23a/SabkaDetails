@@ -5,22 +5,44 @@ function FirstPage() {
   return (
     <div>
 
-      <div className=' flex w-full h-full bg-slate-200 mt-10 '>
+      <div>
 
-        <div className='flex-col  flex  justify-center text-center gap-20'>
-          <h1 className=' text-6xl font-bold underline underline-offset-2 font-mono text-[#86C232]'>Sabka Details</h1>
-          <p className='text-2xl '>Here you can see the student details who have registered</p>
-          <div className='w-full flex justify-center '> 
-         <NavLink to="Form"> <button
-  className="relative py-2 px-10 text-purple-700 text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md shadow-purple-800 hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-purple-500 before:to-purple-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
+      
+        <div className='   flex justify-center '>
+          <img className=' fixed w-5/6 h-5/6 -z-10  opacity-30' src={image1} alt="image" />
+<div className=' w-5/6 flex flex-col gap-20 items-center mt-20' >
+          <h1 className=' font-extrabold text-green-800 text-7xl'>Keep The Details Alive</h1>
+          <h1 className=' font-extrabold text-green-500 text-4xl'>Fill The Form And Save The Students Data</h1>
+          <div>
+  <NavLink to="Form">      
+<button
+  class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all  bg-green-800 rounded-md group"
 >
-  Resgister
-</button>
-</NavLink>
+  <span
+    class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-green-500 rounded group-hover:-mr-4 group-hover:-mt-4"
+  >
+    <span
+      class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"
+    ></span>
+  </span>
+  <span
+    class="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-green-500 rounded group-hover:-ml-4 group-hover:-mb-4"
+  >
+    <span
+      class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"
+    ></span>
+  </span>
+  <span
+    class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-green-500 rounded-md group-hover:translate-x-0"
+  ></span>
+  <span
+    class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white"
+    >Register</span
+  >
+</button></NavLink>   
+
           </div>
         </div>
-        <div className=' h-2/3 w-2/3 '>
-          <img src={image1} alt="image" />
         </div>
       </div>
 

@@ -10,19 +10,19 @@ useEffect(()=>{
 
   return (
     <>
-    <div className=' absolute text-white bg-purple-500   flex justify-center w-full flex-col '>
+    <div className=''>
 
-   <div className='flex justify-center'><h1 className=' font-extrabold text-4xl  underline underline-offset-4 decoration-double	'>All Students Data </h1></div> 
+   <div className='flex justify-center'><h1 className=' font-extrabold text-4xl text-green-800 mt-5 underline underline-offset-4 decoration-double	'>All Students Data </h1></div> 
 
 </div>
 
 
-    <div className=' bg-purple-500 flex flex-col  justify-center items-center  text-white h-max'>
+    <div className='flex flex-col      text-white h-max '>
 
      
-        <div className=' mt-20 '>
-            <table className='w-screen overflow-auto mt-20 '>
-            <thead className='text-purple text-lg font-bold text-gray-950 bg-gray-200 ' >
+        <div className='flex justify-center'>
+            <table className='w-11/12   mt-10 '>
+            <thead className='text-purple text-lg font-bold text-white bg-green-800 ' >
                 <tr  >
                     <th className='p-3  '>Roll No.</th>
                     <th className=''>Name</th>
@@ -36,7 +36,7 @@ useEffect(()=>{
             <tbody>
                 {
                 studentData.map((value)=>(
-                 <tr className=' bg-gray-800 text-center  text-white border border-black' key={value.rollNo}>
+                 <tr className=' bg-gray-800 text-center  text-white border border-green-800' key={value.rollNo}>
                        <td className='p-3'>{value.rollNo}</td> 
                        <td >{value.name}</td> 
                        <td>{value.email}</td> 

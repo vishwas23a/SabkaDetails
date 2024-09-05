@@ -17,39 +17,39 @@ const search=()=>{
 
   return (
     <div>
-<div className=' bg-purple-700 w-screen h-full overflow-auto fixed '>
+<div>
 
 
-<div className='w-full justify-center flex  gap-5 flex-col  items-center h-full'>
+<div className='w-full justify-center flex mt-4 gap-5 flex-col  items-center h-full'>
 <div className='w-full flex justify-center '>
-  <input onChange={(e)=>setInput(e.target.value)}  value={input} className='p-2 w-60  ' type="text" required placeholder='Enter the Roll No.'/>
-    <button onClick={search} className='p-2 bg-purple-700 hover:bg-purple-900 border-white rounded-r-xl border text-white' >Search</button>
+  <input onChange={(e)=>setInput(e.target.value)}  value={input} className='p-2 w-60 border-green-800 border rounded-l-lg  ' type="text" required placeholder='Enter the Roll No.'/>
+    <button onClick={search} className='p-2 bg-green-800 hover:bg-green-500 border-white rounded-r-xl border text-white' >Search</button>
 </div>
 { data!=null ?
-<div className='w-3/5 h-4/5 bg-neutral-100 rounded-xl px-8 shadow-xl   shadow-purple-200  '>
+<div className='w-3/6 h-5/6  rounded-xl px-8 shadow-xl   shadow-green-800  '>
 
-<div className='flex border border-t-0 border-l-0 border-r-0 border-b-purple-700  px-10 py-4 justify-between'>
+<div className='flex border border-t-0 border-l-0 border-r-0 border-b-green-800  px-10 py-4 justify-between'>
 <div className='w-36  h-36 border rounded-full border-black z-10'>
   <img className=' bg-cover ' src={profile} alt="" />
 
 </div>
 <div className='  flex justify-center p-5 w-56  ' >
   <ul className='flex flex-col  justify-center gap-5  fixed   '>
-    <li className='text-2xl text-purple-800  font-bold '> {data.name}</li>
-    <li className='text-xl text-gray-800 font-semibold '> {data.phoneNo}</li>
-    <li className='text-xl  text-gray-800 font-semibold  '> {data.email}</li>
+    <li className='text-2xl text-green-800  font-bold '> {data.name}</li>
+    <li className='text-xl text-green-500 font-semibold '> {data.phoneNo}</li>
+    <li className='text-xl  text-green-500 font-semibold  '> {data.email}</li>
   </ul>
 </div>
 
 </div>  
 
-<div className='p-16 flex  justify-between'>
+<div className='p-12 flex  justify-between'>
 
   <div>
     <ul className=' flex flex-col gap-5'>
-      <li className='text-xl'>RollNO: <span className='text-xl  text-gray-800 font-semibold'>{data.rollNo}</span> </li>
-      <li className='text-xl'>Course: <span className='text-xl  text-gray-800 font-semibold'>{data.course}</span></li>
-      <li className='text-xl'>DOB: <span className='text-xl  text-gray-800 font-semibold'> {data.dob}</span></li>
+      <li className='text-xl text-green-800'>RollNO: <span className='text-xl  text-green-500 font-semibold'>{data.rollNo}</span> </li>
+      <li className='text-xl text-green-800'>Course: <span className='text-xl  text-green-500 font-semibold'>{data.course}</span></li>
+      <li className='text-xl text-green-800'>DOB: <span className='text-xl  text-green-500 font-semibold'> {data.dob}</span></li>
     </ul>
   </div>
   <div className=' flex flex-col flex-start gap-10 mr-20'>
