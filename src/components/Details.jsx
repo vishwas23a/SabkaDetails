@@ -9,7 +9,7 @@ const [data,setData]=useState([])
 
 const search=()=>{
   
-  axios.get(`http://localhost:3000/api/users/${input}`)
+  axios.get(`https://sabkadetails-backend.onrender.com/api/users/${input}`)
   .then((resp)=>setData(resp.data))
   .then(setInput(''))
   

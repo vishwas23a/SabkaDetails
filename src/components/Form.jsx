@@ -28,7 +28,7 @@ const handleChange=(e)=>{
 const submitData=(e)=>{
   e.preventDefault();
 
-  axios.post("http://localhost:3000/api/users",data)
+  axios.post("https://sabkadetails-backend.onrender.com/api/users",data)
   .then(res=> {
     console.log(res);
       toast("Student registerd Successfully",{autoClose: 1000})

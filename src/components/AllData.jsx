@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function AllData() {
     const [studentData,setStudentData]=useState([]) 
 useEffect(()=>{
-    axios.get('http://localhost:3000/api/users')
+    axios.get('https://sabkadetails-backend.onrender.com/api/users')
     .then((resp)=>setStudentData(resp.data))
 })
 
