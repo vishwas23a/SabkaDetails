@@ -31,7 +31,7 @@ const submitData=(e)=>{
   axios.post("http://localhost:3000/api/users",data)
   .then(res=> {
     console.log(res);
-      toast("Student registerd Successfully")
+      toast("Student registerd Successfully",{autoClose: 1000})
         setData({
           name: '',
           rollNo: '',
