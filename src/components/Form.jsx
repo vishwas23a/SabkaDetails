@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { NavLink, Outlet } from 'react-router-dom';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function Form() {
@@ -58,8 +58,8 @@ console.log("something went wrong",err);
 <div className='w-3/4  bg-white h-4/5  mt-8 rounded-2xl  shadow-2xl  shadow-green-800'>
       <form onSubmit={submitData}>
 
-        <div className=' w-full h-96 flex '>
-      <div className='w-1/2 p-10 h-full flex-col flex justify-evenly  '>
+        <div className=' justify-center  md:h-max  md:flex flex-wrap  p-4 gap-10    h-max  '>
+      <div className=' md:w-96  w-full gap-6 p-4 mt-8 h-full flex-col flex justify-evenly  '>
        <input type="text" value={data.name}  required placeholder='Name' onChange={handleChange} name='name' className='border border-green-800  focus:outline-none rounded-lg p-3' />
        <input type="number" value={data.rollNo} required placeholder='Roll No.' onChange={handleChange} name='rollNo' className='border border-green-800 focus:outline-none  rounded-lg p-3' />
  
@@ -67,7 +67,7 @@ console.log("something went wrong",err);
        <input type="number"  value={data.phoneNo} required placeholder='PhoneNo ' onChange={handleChange} name='phoneNo' className='border border-green-800 focus:outline-none  rounded-lg p-3' />
       
        </div> 
-      <div className='h-full p-10 w-1/2 flex flex-col justify-evenly'>
+      <div className='h-full p-4 md:mt-8 w-full md:w-96 gap-6 flex flex-col justify-evenly'>
        <input type="text" value={data.course}  required onChange={handleChange} name='course' placeholder='Course' className='border border-green-800 focus:outline-none  rounded-lg p-3' />
        <input type="date" value={data.dob} required onChange={handleChange} name='dob'  placeholder='DOB' className='border border-green-800 focus:outline-none  rounded-lg p-3' />
        <input type="text" value={data.linkedIn} required onChange={handleChange} name='linkedIn'  placeholder='LinkedIn' className='border focus:outline-none  border-green-800 rounded-lg p-3' />
