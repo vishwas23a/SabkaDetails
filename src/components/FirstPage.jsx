@@ -7,7 +7,7 @@ function FirstPage() {
       <div>
         <div className="     flex justify-center ">
           <img
-            className=" fixed w-5/6 h-5/6 -z-10  opacity-30"
+            className=" fixed md:w-5/6 mt-12 md:mt-0 md:h-5/6 -z-10  opacity-30"
             src={image1}
             alt="image"
           />
