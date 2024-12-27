@@ -11,7 +11,7 @@ function StudentCard(props) {
   } = props;
   return (
     <div>
-      <div className="bg-white shadow-lg  shadow-green-300  drop-shadow-xl  rounded-xl py-8 md:px-6 w-96  px-2 ">
+      <div className="bg-white shadow-lg  shadow-green-300  drop-shadow-xl  rounded-xl py-8 md:px-6 w-84  px-2 ">
         <h1 className=" text-green-900 text-center font-bold text-xl">
           {studentName}
         </h1>

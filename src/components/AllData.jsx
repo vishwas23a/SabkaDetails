@@ -21,7 +21,7 @@ function AllData() {
           </h1>
         </div>
       </div>
-<div className="flex flex-wrap justify-center gap-20 mt-16 px-24 h-max w-full ">
+<div className="flex flex-wrap justify-center gap-20 mt-16 px-24 h-max p-8 w-full ">
     {studentData.map((student) => (
         <div key={student._id}>
         <StudentCard 
